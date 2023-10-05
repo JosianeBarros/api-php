@@ -47,3 +47,12 @@ Atualizando os dados do livro
 Apagando livro cadastrado
 
 ![image](https://github.com/JosianeBarros/api-php/assets/108816336/f1d7a073-f3a8-4926-9533-47c0f9c1c613)
+
+# Implementação da API.
+
+Os arquivos index.html e script.js fazem a implementação da API.
+
+![image](https://github.com/JosianeBarros/api-php/assets/108816336/56e79c19-242c-419c-80e5-934dc226dfb9)
+
+![image](https://github.com/JosianeBarros/api-php/assets/108816336/9c0c4c1d-07af-4c4a-831c-693a19d8f5f4)
+
