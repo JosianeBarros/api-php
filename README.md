@@ -3,7 +3,7 @@
 API feita em PHP (sem usar framework) que realiza cadastro, lista, atualiza e apaga dados de livros. A implementação da API é feita usando o JavaScript.
 
 # Requisitos
-Ter o XAMPP instalado.
+Ter o XAMPP e o Insomnia instalados.
 
 # Instalação
 Para instalar esse projeto você pode clonar o repositório:
