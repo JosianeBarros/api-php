@@ -27,3 +27,11 @@ CREATE TABLE livros (
 ```
 
 # Imagens
+
+Cadastrando um livro
+
+![Image](https://github.com/JosianeBarros/api-php/assets/108816336/f7298739-25ee-4fe9-b3f3-073677768d95)
+
+![Image](https://github.com/JosianeBarros/api-php/assets/108816336/a980807f-2d74-4f12-98ed-a403fa50a939)
+
+
