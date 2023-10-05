@@ -12,7 +12,7 @@ Para instalar esse projeto você pode clonar o repositório:
 git clone https://github.com/JosianeBarros/api-php.git
 ```
 
-É necessário ter um banco de dados com o nome `cadastro`, e dentro dele deve ter a tabela ` livros`, para cria-lá use:
+É necessário ter um banco de dados com o nome `cadastro`, e dentro dele deve ter a tabela `livros`, para cria-lá use:
 
 ```
 CREATE TABLE livros (
