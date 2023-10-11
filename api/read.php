@@ -1,30 +1,28 @@
 <?php
 
-header("Content-Type: application/json; charset=UTF-8");
-$dados = json_decode($dados, true);
-
+include '../api/helpers.php';
 include "db.php";
 
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
+$dados = json_decode(file_get_contents('php://input'), true);
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $connection = conectar();
     $selectDados = "SELECT * FROM livros";
     $resultado = $connection->query($selectDados);
 
-    if($resultado->num_rows > 0){
-        $livros = array();
+    if ($resultado->num_rows > 0) {
+        $livros = [];
 
         while($row = $resultado->fetch_assoc()){
             $livros[] = $row;
         }
-        echo json_encode($livros);
-    }else{
-        echo json_encode(array(["mensagem" => "Nenhum livro encontrado"]));
+
+        responseJson($livros, 200);
+    } else {
+        responseJson("Nenhum livro encontrado", 204);
     }
 
     $connection->close();
-
-}else{
-    echo json_encode(["mensagem" => "Error"]);
+} else {
+    responseJson('Error', 405);
 }
-
-?>
