@@ -22,7 +22,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
         $connection->close();
     }else{
-        echo json_encode(["mensagem" => "Preencha todos os campos"]);
+        echo json_encode(["mensagem" => "Preencha o campo"]);
     }
 }else{
     echo json_encode(["mensagem" => "Erro"]);
