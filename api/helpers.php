@@ -1,6 +1,6 @@
 <?php
 
-function responseJson(string $message, int $httpCode)
+function responseJson(string|array $message, int $httpCode)
 {
     header("Content-Type: application/json; charset=UTF-8");
 

@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $livros[] = $row;
         }
 
-        responseJson($dados, 200);
+        responseJson($livros, 200);
     } else {
         responseJson("Nenhum livro encontrado", 204);
     }
