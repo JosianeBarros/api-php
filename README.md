@@ -32,8 +32,11 @@ Cadastrando um livro
 
 ![image](https://github.com/JosianeBarros/api-php/assets/108816336/c99087c0-3c9e-4756-a44a-50c168d5f71d)
 
+![image](https://github.com/JosianeBarros/api-php/assets/108816336/c55a3a03-ac51-47d0-bb40-9af2d025cedc)
 
 Listando os livros cadastrados
+
+![image](https://github.com/JosianeBarros/api-php/assets/108816336/6427a239-6965-4c36-bb99-3461c0d09d29)
 
 
 Atualizando os dados do livro
