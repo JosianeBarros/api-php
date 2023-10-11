@@ -38,8 +38,9 @@ Listando os livros cadastrados
 
 ![image](https://github.com/JosianeBarros/api-php/assets/108816336/6427a239-6965-4c36-bb99-3461c0d09d29)
 
-
 Atualizando os dados do livro
+
+![image](https://github.com/JosianeBarros/api-php/assets/108816336/b0e4d11e-5ab2-4418-bce4-3815782de487)
 
 
 Apagando livro cadastrado
