@@ -30,23 +30,17 @@ CREATE TABLE livros (
 
 Cadastrando um livro
 
-![image](https://github.com/JosianeBarros/api-php/assets/108816336/f7298739-25ee-4fe9-b3f3-073677768d95)
+![image](https://github.com/JosianeBarros/api-php/assets/108816336/c99087c0-3c9e-4756-a44a-50c168d5f71d)
 
-![image](https://github.com/JosianeBarros/api-php/assets/108816336/a980807f-2d74-4f12-98ed-a403fa50a939)
 
 Listando os livros cadastrados
 
-![image](https://github.com/JosianeBarros/api-php/assets/108816336/5f40a138-01ae-47a4-8e25-64f6fdebf0ca)
-
-![image](https://github.com/JosianeBarros/api-php/assets/108816336/4d798d36-9ae6-4feb-8fd4-c1cf1b6869c0)
 
 Atualizando os dados do livro
 
-![image](https://github.com/JosianeBarros/api-php/assets/108816336/dbc6dfea-4403-4f9d-be6d-60cef8b20a23)
 
 Apagando livro cadastrado
 
-![image](https://github.com/JosianeBarros/api-php/assets/108816336/f1d7a073-f3a8-4926-9533-47c0f9c1c613)
 
 # Implementação da API.
 
