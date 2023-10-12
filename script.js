@@ -1,30 +1,48 @@
-document.getElementById("formulario").addEventListener("submit", function(enviarDados){
-    enviarDados.preventDefault();
-    let nome = document.getElementById("nome").value;
-    let autor = document.getElementById("autor").value;
-    let editora = document.getElementById("editora").value;
-    let paginas = document.getElementById("paginas").value;
-    let ano = document.getElementById("ano").value;
-    let quantidade = document.getElementById("quantidade").value;
-    
-    fetch('api/create.php', {
-        method: 'Post',
+async function createBook(dados)
+{
+    await fetch('api/create.php', {
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
+        body: JSON.stringify(dados)
+    })
+    .then(response =>{
+        if (response.status === 201) {
+            document.getElementById("formulario").reset()
+        } 
+
+        return response.json()
+    })
+    .then(response => {
+        window.alert(response.mensagem)
+    })
+    .catch(error => {
+        console.log(error);
+    })
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const formularioCriacao = document.getElementById("formulario");
+
+    formularioCriacao.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        let nome = document.getElementById("nome").value;
+        let autor = document.getElementById("autor").value;
+        let editora = document.getElementById("editora").value;
+        let paginas = document.getElementById("paginas").value;
+        let ano_da_publicacao = document.getElementById("ano").value;
+        let quantidade = document.getElementById("quantidade").value;
+
+        await createBook({
             nome: nome,
             autor: autor,
             editora: editora,
             paginas: paginas,
-            ano: ano,
+            ano_da_publicacao: ano_da_publicacao,
             quantidade: quantidade
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById("formulario").reset();
-        alert(data.mensagem);
+        });
     });
 });
 
